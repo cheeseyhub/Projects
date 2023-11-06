@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+html {
+  font-family: "Roboto";
+}
+body {
+  background: url(images/background.png);
+}
+#logo {
+  width: 200px;
+  margin-bottom: 150px;
+}
+#rocket {
+  position: absolute;
+  right: 10%;
+  bottom: 0px;
+  width: 15rem;
+  animation: rocket 4s infinite;
+}
+@keyframes rocket {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    bottom: 50rem;
+  }
+}
+main {
+  padding: 50px 7em;
+
+  & p {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  & > h1 {
+    font-size: 55px;
+  }
+  & h1 span {
+    color: #ec35af;
+  }
+}
+#time {
+  display: flex;
+  flex-flow: row;
+  padding: 10px 0px;
+  gap: 25px;
+  font-size: 30px;
+}
+/* || BUTTON */
+button {
+  background-color: transparent;
+  padding: 13px 15px;
+  margin: 15px 0px;
+  border: 2px solid #fff;
+  transition: all 0.4s;
+  & i {
+    padding: 5px;
+    transition: all 0.4s;
+  }
+  &:hover {
+    color: #0d0b1a;
+    background-color: white;
+  }
+  &:hover i {
+    color: #0d0b1a;
+    transform: translate(5px);
+  }
+}
+@media all and (max-width: 414px) {
+  #logo {
+    position: relative;
+    left: 100px;
+    top: 100px;
+  }
+  main {
+    padding: 0;
+  }
+  main p {
+    text-align: center;
+  }
+  button {
+    transform: translate(150px);
+  }
+  h1 {
+    text-align: center;
+  }
+  #time {
+    padding: 45px;
+  }
+}

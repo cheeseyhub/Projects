@@ -1,0 +1,20 @@
+body {
+  padding: 10%;
+  font-size: 2rem;
+}
+/* button,
+input {
+  font: inherit;
+} */
+
+/* p {
+  text-decoration: underline,overline and line-through;
+}
+ */
+/* p {
+    text-align: justify;
+ } */
+p {
+  line-height: normal;
+  letter-spacing: normal;
+}

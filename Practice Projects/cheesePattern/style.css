@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-image: radial-gradient(
+    circle,
+    rgb(238, 174, 54),
+    rgb(216, 153, 95)
+  );
+  height: 100vh;
+  width: 100vw;
+  background-size: 20px, 20px;
+}

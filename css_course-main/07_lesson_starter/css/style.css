@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+a:visited {
+  color: red;
+}
+a:hover {
+  color: brown;
+}
+a:active {
+  color: violet;
+}
