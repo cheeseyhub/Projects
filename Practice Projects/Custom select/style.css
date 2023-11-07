@@ -27,6 +27,7 @@ body {
 #selectfield {
   display: flex;
   width: 100%;
+  transition: all 0.5s;
   padding: 15px 20px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 20px 3px rgb(102, 21, 21);
@@ -35,7 +36,43 @@ body {
 #selectfield i {
   transition: 0.5s;
 }
-.selector:hover #selectfield i {
+.selector #selectfield:hover i {
   rotate: 180deg;
   translate: 0px -5px;
+}
+#selectfield:hover {
+  transform: translatey(-5px);
+}
+/* ================
+    LIST 
+    ===============*/
+
+.list {
+  width: 0px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.hide {
+  width: 0px;
+}
+.list ul {
+  display: flex;
+  list-style-type: none;
+}
+.options {
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  padding: 15px 20px;
+  transition: all 0.5s;
+}
+.options:hover {
+  transform: translate(-5px);
+  background-color: rgb(244, 243, 245);
+}
+.options img {
+  width: 25px;
 }
