@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../Fonts/Poppins/Poppins-Light.ttf);
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #d0eaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  width: 90%;
+  max-width: 750px;
+  display: flex;
+}
