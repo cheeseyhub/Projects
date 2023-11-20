@@ -23,3 +23,150 @@ html {
   max-width: 750px;
   display: flex;
 }
+/* || GALLERY */
+.gallery {
+  flex-basis: 47%;
+  background-color: black;
+  transform: scale(1.1);
+  box-shadow: -10px 5px 14px 0px rgb(170, 238, 193);
+  position: relative;
+  & img {
+    width: 100%;
+    padding-top: 70px;
+  }
+  & .controls {
+    display: flex;
+    position: absolute;
+    gap: 5px;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+  & .controls .btn {
+    width: 15px;
+    cursor: pointer;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  & .controls .btn.active {
+    background-color: rgb(48, 60, 224);
+  }
+}
+/* ||| DETAILS */
+.details {
+  flex-basis: 53%;
+  padding: 40px;
+  box-shadow: -10px 5px 14px 0px rgb(170, 238, 193);
+  background-color: #fff;
+  font-size: 13px;
+
+  & .name {
+    font-weight: bolder;
+    font-size: 35px;
+  }
+  & .price {
+    font-size: 25px;
+  }
+  & .discount {
+    font-size: 20px;
+    font-weight: bolder;
+    color: green;
+  }
+  & .about {
+    font-size: 13px;
+    padding: 7px 0px;
+  }
+} /* || Size Select */
+form {
+  font-size: 17px;
+  font-weight: 400;
+  & div {
+    padding: 5px;
+  }
+}
+.size-select {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 7px;
+  & p {
+    width: 70px;
+  }
+  & input:checked + span {
+    color: blue;
+    font-weight: 700;
+  }
+  & input {
+    opacity: 0;
+  }
+}
+/* ||| Colors */
+.color-select {
+  display: flex;
+  gap: 20px;
+  & p {
+    width: 70px;
+  }
+  & input {
+    opacity: 0;
+  }
+  & input:checked + span {
+    transform: scale(1.4);
+  }
+  & label {
+    position: relative;
+  }
+  & span {
+    transition: all 0.4s;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+  & .color-red {
+    background-color: red;
+  }
+  & .color-green {
+    background-color: green;
+  }
+  & .color-black {
+    background-color: black;
+  }
+  & .color-orange {
+    background-color: rgb(255, 145, 0);
+  }
+}
+/* || Quantity */
+.quantity {
+  display: flex;
+  gap: 15px;
+  & p {
+    width: 100px;
+  }
+  & .number {
+    outline: none;
+    width: 35px;
+  }
+}
+/* ||Submit */
+#submit {
+  width: 200px;
+  padding: 10px;
+  margin: 20px 20px 0px 55px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(48, 60, 224);
+  box-shadow: 0px 2px 2px 3px rgba(23, 23, 23);
+  transition: all 0.4s;
+}
+#submit:hover {
+  transform: translateY(3px);
+}
