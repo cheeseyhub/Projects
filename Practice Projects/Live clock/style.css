@@ -1,5 +1,85 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../Fonts/Poppins/Poppins-Light.ttf);
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* || Hero */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #00001f, #30197d);
+  color: #fff;
+  position: relative;
+}
+
+/* || Container */
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  width: 800px;
+  height: 180px;
+}
+.square {
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  position: absolute;
+  top: -27px;
+  left: -25px;
+  z-index: -1;
+}
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: lightgreen;
+  bottom: -20px;
+  right: -39px;
+  z-index: -1;
+}
+/* || Clock */
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 0, 255, 0.11);
+  border-radius: 10px;
+  z-index: 1;
+  backdrop-filter: blur(50px);
+}
+.clock h1 span {
+  font-size: 50px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+.clock h1 span::after {
+  font-size: 15px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  translate: -50%;
+}
+#hours::after {
+  content: "Hours";
+}
+#minutes::after {
+  content: "Minutes";
+}
+#seconds::after {
+  content: "seconds";
 }
