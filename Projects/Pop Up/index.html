@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Pop Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <button type="submit" class="btn" onclick="show()">Submit</button>
+
+      <div class="pop-up" id="popup">
+        <img src="./404-tick.png" />
+        <h1>Thank You!</h1>
+        <p>Your details have been successfully submitted<br />. Thanks!</p>
+        <button class="ok" onclick="removeShow()">OK</button>
+      </div>
+    </div>
+  </body>
+</html>

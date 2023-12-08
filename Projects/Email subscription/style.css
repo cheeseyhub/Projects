@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(astronomy-1867616_1280.jpg);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 10px 10%;
+}
+.container {
+  margin: 200px 5px;
+}
+.container h3 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.container h1 {
+  margin-top: 20px;
+  font-size: 45px;
+}
+.container p {
+  font-size: 19px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.email {
+  display: flex;
+  padding: 5px;
+}
+.email input {
+  padding: 20px 25px;
+  width: 350px;
+  outline: none;
+}
+.email button {
+  padding: 15px 40px;
+  background-color: seagreen;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.email button i {
+  color: white;
+  font-size: 25px;
+}
+.container span {
+  display: block;
+  padding: 17px;
+  transition: all 0.5s;
+  opacity: 0;
+  font-size: 20px;
+  color: #fff;
+}
