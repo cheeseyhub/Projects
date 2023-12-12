@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Bubble-Game</title>
   </head>
   <body>
@@ -13,17 +13,18 @@
         <div id="ptop">
           <div class="elem">
             <h4>Hit</h4>
-            <div class="box">5</div>
+            <div class="box" id="hitbubble"></div>
           </div>
           <div class="elem">
             <h4>Timer</h4>
-            <div class="box">5</div>
+            <div class="box" id="timer"></div>
           </div>
           <div class="elem">
             <h4>Score</h4>
-            <div class="box">5</div>
+            <div class="box" id="score"></div>
           </div>
         </div>
+        <div id="pbody"></div>
       </div>
     </main>
   </body>
